@@ -11,3 +11,13 @@ print(len(myName)) #length of string
 print('what is your age?') #ask for age
 myAge= input()
 print('you will be ' + str(int(myAge)+1)+' in a year'  )
+
+
+#the intiger value and string value cannot be added together
+like ('26') #string +5 #int 
+gives an error 
+so the code need to be converted to same types
+like int('26') #string converted to integer +5 #int
+which gives an output of 31
+
+#input() always takes a string value
