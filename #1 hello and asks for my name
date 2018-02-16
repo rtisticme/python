@@ -10,7 +10,7 @@ print(len(myName)) #length of string
 
 print('what is your age?') #ask for age
 myAge= input()
-print('you will be ' + str(int(myAge)+1)+' in a year'  )
+print('you will be ' + str(int(myAge)+1)+' in a year'  ) #we covert the integer value to string because the final value is in string
 
 
 #the intiger value and string value cannot be added together
