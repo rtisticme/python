@@ -1,0 +1,36 @@
+#handling different errors with try and except
+
+def divby(divideValue) :
+    return 42/divideValue
+print(divby(3))
+print(divby(4))
+#print(divby(0)) #the code gives a error and stops (zeroDivisionError)
+print(divby(20))
+----------------------------------------------------------------------------------------------------------------------------------------
+#so we can use try and expect
+
+def divby(divideValue) :
+    try:
+        return 42/divideValue
+    except ZeroDivisionError:
+        print ('I do not know how to compute division by zero')
+        
+print(divby(3))
+print(divby(4))
+print(divby(0)) 
+print(divby(20))
+-----------------------------------------------------------------------------------------------------------------------------------------
+#for if else
+
+print ('Enter the nuber of cigarrate you smoke every day')
+number=input() 
+try:
+    if int(number) >=4 :
+        print ('Stop ssmoking if you want to lives')
+    elif int(number) <0 :
+        print ('Be serious')
+    elif int(number)==0 :
+        print ('You will live long')
+except ValueError:
+        print ('Enter a number you idiot')
+#But a string value gives value error so we can use try expect
