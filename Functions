@@ -1,0 +1,26 @@
+The main point of a function is to get rid of duplicate code
+def- defines a function 
+the input to function are argument hello()-null argument, hello(name) - variable. And the output is the return value.
+The return vlaue is specific to return statement i.e value inside of a function 
+Keyword arguments are optional e.g. for print()- sep and end
+
+def name() : #defining a function 
+    print ('hello there!')
+    print ('how are you')
+
+name()
+name()
+#the function is called twice
+------------------------------------------------------------------------------------------------------------------------------------
+def hello(name) : #funtionname(variable)
+    print('hello '+ name, sep='') #keyword argument not very important 'sep'
+
+hello(input()) #passing a value to the fuction hello (string)
+                #or hello ('RT') passes RT to name 
+-----------------------------------------------------------------------------------------------------------------------------------
+def plusOne(number):
+    return number+1
+
+newNumber=plusOne(int(input())) #pass integer value 5 to number (intput()=string)
+print('your age is ' + str(newNumber)) #passing the output to newNumber variable
+
