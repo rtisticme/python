@@ -1,0 +1,25 @@
+#Guess the Number Game
+import random #standard library 
+print ('What is your name Ashhole?')
+name = input()
+
+print ('Well, ' +name + ' you think you are so smart,' , end='') #end is to connect 2 print syntax
+print ('then tell what number I am thinking form 1 to 20, you have 6 chances')
+secretNumber=random.randint(1,20) #any number form 1 to 20
+try:
+    for guessTaken in range (1,7) : #for i from 1 to 7
+        print('Take a guess ashhole')
+        guess = int(input()) #take a input value ( int to compare)
+        if guess < secretNumber: #int<int
+            print('You guess is too low')
+        elif guess > secretNumber:
+            print ('your guess is too high')
+        else:
+            break #this condition is for correct guess #go to the end if true 
+
+    if guess == secretNumber:
+        print ('Congrats, ' + str(name) + '! syou guessed my number in' + str(guessTaken)+ ' steps')
+    else:
+        print ('Nope. My number was ' + str(secretNumber) + ' You Suck!:P' )
+except ValueError: #so that no one is able to enter string 
+    print('Enter a Number you Jasckass!')
