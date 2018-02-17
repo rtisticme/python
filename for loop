@@ -1,0 +1,40 @@
+#for loop (a specific number for time
+# while loop- checks for codition)
+
+print ('My name is')
+for i in range(5) : #i is a interger value, 5 represents the number 
+    print ( 'RT' + str (i))
+-------------------------------------------------------------------------------------------------------------------------------------
+name= input() #takes string by default 
+for i in range(5) : #value of i chages for every loop 
+    print ( name + str (i)) # prints the input value 5 times
+            #string + #string
+-------------------------------------------------------------------------------------------------------------------------------------
+#add all numbers form 1 to a 100
+total=0
+for num in range(101): #101 because the first value starts form zero
+    total= total+ num #does the sum 100 times 
+    print(total)
+    
+#Gauss way
+    #there are 50 pairs of numbers from 1-100
+    #so 50*100=5000+50(middle value) = 5050
+    #1+99, 2+98, 3+97, 49+51
+--------------------------------------------------------------------------------------------------------------------------------------
+#while equivalent
+name = input()
+i=0
+#for i in range(5) : 
+while i<5 :
+    print(name + str (i))
+    i=i+1
+--------------------------------------------------------------------------------------------------------------------------------------
+#using three arguments in for loop 
+name= input() 
+for i in range(0,10,1) : #(form 0 to 10, increasing by 1(default))
+    print ( name + str (i))
+-------------------------------------------------------------------------------------------------------------------------------------
+name= input() 
+for i in range(5,20,6) : #(form 5 to 20 times, increasing by 6)
+    print ( name + str (i)) 
+
