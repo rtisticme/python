@@ -50,4 +50,23 @@ the index 0 in supplies is : pens
 the index 1 in supplies is : staplers
 the index 2 in supplies is : flame-thrower
 the index 3 in supplies is : pencil
->>> 
+
+#assigning mutiplt items in  a list to multiple different variables
+>>> cat=['fat', 20, 'black'] #qualities that dexcribes a cat
+>>> size, height, color = cat #multiple assignment
+>>> size
+'fat'
+>>> height
+20
+>>> color
+'black'
+
+#swapping value of multiple variables 
+>>> a='bat'
+>>> b='cat'
+>>> a, b = b, a #swapping values 
+>>> a
+'cat'
+>>> b
+'bat'
+
