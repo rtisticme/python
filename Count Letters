@@ -1,0 +1,37 @@
+import pprint  #for a nice sorted display
+message = '''Everything has texture — surface characteristics you can feel or that affect the way a thing looks
+when the light hits it. Think of tree bark, rough grasses, polished glass, a baby's cheek, the
+glossy flanks of a thoroughbred horse. All these things share a common feature — they have a
+unique texture that contributes something essential to their identity.
+You can capture these textures in watercolor to enhance the tactile appeal of your work.
+You can make each subject ring true by believably rendering soft or hard, rough or shiny,
+smooth or ridged surfaces. It's simply a matter of thinking through and planning ahead to
+capture the effect you're after.
+There are those who say watercolor is tricky— impossible, at times! —and so it can be, if
+you are only shooting for those exciting, spontaneous effects that produce what we call "happy
+accidents." It's exciting, all right, but almost as dangerous as hang gliding without proper
+instruction. It takes practice to learn how to wing it without crashing.
+Like learning to hang glide, watercolor takes practice — you don't jump off a cliff without a
+good grounding in the basics. Capturing textures in watercolor is much the same.
+Careful observation is one of the best keys to rendering surface texture, followed by a good
+dose of (right-brain) thinking. How does the light hit your subject? Is it oblique or straight on?
+What does that tell you about what you see? Does it enhance or flatten surface characteristics?
+And what should you paint first to get the effect you're after? What comes second? How far
+should you go? And what attracted you in the first place?
+It isn't necessary to paint every hair on a kitten to capture the effect of soft fur, or to capture
+every light-struck detail of a cut-glass vase; these techniques are a sort of shorthand you can
+carry as far as you like. (However, if you are into photorealism, you can "get there from here.")
+I prefer the simpler approach, and most of the examples in this book will reflect that simplicity.'''
+
+count = {} #defining a empty list so that the calues can be passed 
+            #e.g.'r':2, dictionary is completely empty 
+for character in message.upper() : 
+    count.setdefault(character, 0) #put character in a list, if the value is not
+                                    #present make the value 0
+    count[character] = count[character] + 1 #update the value of the character by 1
+
+pprint.pprint(count)
+
+#the program prints upeer and lowercase values as different we change that by using
+#message.upper()
+#we can use thsi to calculate number of letters in long paragraph
