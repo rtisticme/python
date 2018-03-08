@@ -48,7 +48,9 @@ message ='message Call the number +977-9840067948 tomorrow, or a number 01-44368
     
 mobileNumber = re.compile (r'\+\d\d\d-\d\d\d\d\d\d\d\d\d\d') #pattern  d-digits 
 phoneNumber = re.compile (r'\d\d-\d\d\d\d\d\d\d')#pattern  d-digits , raw string is standard 
-print(mobileNumber.search(message)) #to find a single occurence
-print(phoneNumber.search(message))
+mn=mobileNumber.search(message) #to find a single occurence
+print(mn.group())
+pn=phoneNumber.search(message)
+print(pn.group())
 print(mobileNumber.findall(message)) #to find all the occurences 
 print(phoneNumber.findall(message)) 
