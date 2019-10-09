@@ -1,0 +1,12 @@
+
+def celcius_to_Farhrenheit(c):
+        if(int(c)<-273):
+            return 'the temprature is not real'
+        else:
+            F=((int(c)*9)/5)+32
+            return F
+
+
+temperatures=[10,-20,-289,100]
+for t in temperatures :
+    print(celcius_to_Farhrenheit(t))
