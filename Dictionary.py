@@ -13,7 +13,7 @@ def translate(w):
     elif w.upper() in data: #in case user enters words like USA or NATO
         return data[w.upper()]
     elif len(get_close_matches(w,data.keys()))>0: 
-        yn=input("Did you mean %s instead? Enter Y or N"%get_close_matches(w,data.keys())[0]).upper()
+        yn=input("Did you mean %s instead? Enter Y or N"%get_close_matches(w,data.keys())[0]).upper())
         if yn=='Y':
             return data[get_close_matches(w,data.keys())[0]]
         elif yn=='N':
